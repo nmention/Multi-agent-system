@@ -34,7 +34,7 @@ to setup
 
 end
 
-;; ---- Boucle principale d'exécution  -----
+;; ---- boucle principale d'exécution  -----
 to start
   ask turtles with [color = red or color = green] [
     forward 1
@@ -59,7 +59,7 @@ to start
   infect_dissipate_env
   old
 
-  ;; Affichage des statistiques
+  ;; ffichage des statistiques
   plot count turtles with [color = red]
   plot count turtles with [color = grey]
   plot count turtles with [color = pink]
@@ -75,7 +75,7 @@ to get_sick
 
 end
 
-;; Infection des autres pairs et des surfaces sur son chemin
+;; infection des autres pairs et des surfaces sur son chemin
 to infect
   if any? turtles-here with [ color = green ] [
     ask turtles-here with [ color = green ] [
